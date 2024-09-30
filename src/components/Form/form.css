@@ -1,0 +1,47 @@
+.form {
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* Ставим элементы формы один под другим */
+  align-items: center; /* Центрируем элементы внутри формы */
+  padding: 20px; /* Внутренние отступы */
+  border-radius: 8px; /* Скругленные углы */
+
+  input {
+    width: 100%; /* Поле ввода будет растягиваться по ширине */
+    padding: 10px; /* Внутренние отступы */
+    margin-bottom: 10px; /* Отступ между полем ввода и кнопкой */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  button {
+    width: 70%;
+    padding: 12px 20px;
+    background: linear-gradient(
+      135deg,
+      #3cd83c,
+      #178c17
+    ); /* Градиент для кнопки */
+    color: white;
+    border: none;
+    border-radius: 4px; /* Закругленные края */
+    font-size: 16px; /* Увеличенный шрифт */
+    font-weight: 600; /* Жирность текста */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Плавный переход для всех эффектов */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Легкая тень для объема */
+    &:hover {
+      background: linear-gradient(
+        135deg,
+        #178c17,
+        #3cd83c
+      ); /* Обратный градиент при наведении */
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Усиленная тень */
+      transform: translateY(-3px); /* Легкий "подъем" кнопки */
+    }
+    &:active {
+      transform: translateY(1px); /* Легкий "нажатие" кнопки */
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Более слабая тень при нажатии */
+    }
+  }
+}
