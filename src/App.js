@@ -3,7 +3,7 @@ import Info from "./components/Info/Info";
 import Form from "./components/Form/Form";
 import Weather from "./components/Weather/Weather";
 
-const API_KEY = "a1babd86f8a7c7f6f4946294953d33f9";
+const API_KEY = "key";
 
 const App = () => {
   const [state, setState] = useState({
